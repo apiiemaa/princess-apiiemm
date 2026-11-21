@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>apiiem | Website Pribadi</title>
+  <meta name="description" content="Website pribadi apiiem dari Bekasi, bertema pink princess.">
+  <meta name="theme-color" content="#FFE9D2">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%91%91%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#konten">Lewati ke konten</a>
+
+  <!-- Mahkota kecil yang bisa dipakai ulang -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#F8D98A"/>
+        <stop offset="0.55" stop-color="#D9A441"/>
+        <stop offset="1" stop-color="#B9812C"/>
+      </linearGradient>
+      <linearGradient id="pinkgem" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#FF9CC8"/>
+        <stop offset="1" stop-color="#D6358A"/>
+      </linearGradient>
+      <symbol id="crown" viewBox="0 0 200 150">
+        <path d="M18 128 L8 48 L56 86 L100 14 L144 86 L192 48 L182 128 Z" fill="url(#gold)" stroke="#9A6A1F" stroke-width="3" stroke-linejoin="round"/>
+        <rect x="18" y="118" width="164" height="20" rx="8" fill="url(#gold)" stroke="#9A6A1F" stroke-width="3"/>
+        <circle cx="8" cy="46" r="8" fill="url(#pinkgem)" stroke="#9A6A1F" stroke-width="2"/>
+        <circle cx="100" cy="12" r="10" fill="url(#pinkgem)" stroke="#9A6A1F" stroke-width="2"/>
+        <circle cx="192" cy="46" r="8" fill="url(#pinkgem)" stroke="#9A6A1F" stroke-width="2"/>
+        <path d="M100 112 C86 100 80 92 88 84 C94 78 100 82 100 88 C100 82 106 78 112 84 C120 92 114 100 100 112 Z" fill="url(#pinkgem)" stroke="#9A6A1F" stroke-width="2"/>
+        <circle cx="52" cy="128" r="4.5" fill="#FFF1F6"/>
+        <circle cx="148" cy="128" r="4.5" fill="#FFF1F6"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <a class="brand" href="#beranda" aria-label="Kembali ke atas">
+      <svg class="brand-crown" aria-hidden="true"><use href="#crown"/></svg>
+      <span>apiiem</span>
+    </a>
+
+    <nav id="menu" class="nav" aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#favorit">Favorit</a></li>
+        <li><a href="#perjalanan">Perjalanan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-tools">
+      <button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false">
+        <span aria-hidden="true">🌙</span> <span class="theme-label">Mode malam</span>
+      </button>
+      <button id="menuToggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="konten">
+    <!-- BERANDA -->
+    <section id="beranda" class="hero">
+      <div class="hero-text">
+        <p class="hello">Selamat datang di istanaku ♥</p>
+        <h1>Halo, aku apiiem dari Bekasi.</h1>
+        <p class="lead">Pecinta warna pink dan cream, dan penggemar berat tidur nyenyak. Selamat berkeliling di istana kecilku.</p>
+        <div class="actions">
+          <a class="btn" href="#tentang">Kenali aku</a>
+          <a class="btn btn-ghost" href="#kontak">Kirim pesan</a>
+        </div>
+      </div>
+
+      <div class="hero-crown">
+        <button id="crownBtn" class="crown-btn" type="button" aria-label="Ketuk mahkota untuk menebar kilau">
+          <svg class="crown-svg" aria-hidden="true"><use href="#crown"/></svg>
+        </button>
+        <p id="crownHint" class="crown-hint" aria-live="polite">Ketuk mahkotanya, ada kejutan kecil.</p>
+      </div>
+    </section>
+
+    <!-- TENTANG -->
+    <section id="tentang" class="section">
+      <h2>Tentang aku</h2>
+      <div class="about">
+        <div class="avatar">
+          <svg class="avatar-fallback" viewBox="0 0 120 120" aria-hidden="true">
+            <circle cx="60" cy="46" r="22" fill="#F8BBD6"/>
+            <path d="M16 112 C16 84 38 72 60 72 C82 72 104 84 104 112 Z" fill="#F8BBD6"/>
+          </svg>
+          <img src="assets/foto.jpg" alt="Foto apiiem" onerror="this.remove()">
+        </div>
+
+        <div class="about-body">
+          <p>Halo! Aku apiiem, berasal dari kota Bekasi. Hobiku tidur, dan aku suka sekali warna pink dan cream. Makanya istana kecil ini kudekorasi dengan kedua warna itu.</p>
+          <dl class="facts">
+            <div><dt>Nama</dt><dd>apiiem</dd></div>
+            <div><dt>Asal</dt><dd>Bekasi</dd></div>
+            <div><dt>Ulang tahun</dt><dd>31 Januari</dd></div>
+            <div><dt>Hobi</dt><dd>Tidur</dd></div>
+            <div><dt>Warna favorit</dt><dd>Pink dan cream</dd></div>
+          </dl>
+          <p id="countdown" class="countdown" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAVORIT -->
+    <section id="favorit" class="section">
+      <h2>Hobi dan favorit</h2>
+      <div class="talent">
+        <div>
+          <h3>Seberapa aku suka...</h3>
+          <ul class="meters">
+            <li style="--level:100%">
+              <div class="meter-head"><span>Tidur</span><span>100%</span></div>
+              <div class="meter" role="img" aria-label="Suka tidur 100 persen"><span></span></div>
+            </li>
+            <li style="--level:100%">
+              <div class="meter-head"><span>Warna pink</span><span>100%</span></div>
+              <div class="meter" role="img" aria-label="Suka warna pink 100 persen"><span></span></div>
+            </li>
+            <li style="--level:100%">
+              <div class="meter-head"><span>Warna cream</span><span>100%</span></div>
+              <div class="meter" role="img" aria-label="Suka warna cream 100 persen"><span></span></div>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Palet favoritku</h3>
+          <ul class="swatches">
+            <li><span class="swatch" style="background:#F58FBD"></span>Pink</li>
+            <li><span class="swatch" style="background:#FFE9D2"></span>Cream</li>
+          </ul>
+          <h3 class="sub">Hobi</h3>
+          <ul class="chips">
+            <li>Tidur 😴</li>
+          </ul>
+          <p class="note">Mau tambah hobi lain? Edit daftar ini di index.html.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERJALANAN -->
+    <section id="perjalanan" class="section">
+      <h2>Perjalananku</h2>
+      <ol class="timeline">
+        <li>
+          <time>31 Januari</time>
+          <h3>Hari ulang tahunku</h3>
+          <p>Hitung mundurnya ada di bagian Tentang.</p>
+        </li>
+        <li>
+          <time>Sekarang</time>
+          <h3>Membangun istanaku</h3>
+          <p>Membuat website pink princess ini, lengkap dengan mahkota yang bisa diketuk.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="section">
+      <h2>Hubungi aku</h2>
+      <div class="contact">
+        <form id="contactForm" novalidate>
+          <label for="nama">Namamu</label>
+          <input id="nama" name="nama" type="text" autocomplete="name" required>
+
+          <label for="email">Emailmu</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+          <button class="btn" type="submit">Kirim lewat email</button>
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-side">
+          <p>Atau temui aku di sini:</p>
+          <ul class="links">
+            <li><a href="https://instagram.com/usernamekamu" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://github.com/usernamekamu" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/usernamekamu" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Dibuat dengan ♥ oleh apiiem &copy; <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
